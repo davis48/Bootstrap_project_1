@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMT - Go My Travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <style>
+        /* Styles pour le texte de la section hero */
+        .hero {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        /* Couleurs personnalisées pour les cartes */
+        .card-title {
+            color: #007BFF;
+        }
+        .card-text {
+            font-size: 0.9rem;
+        }
+        /* Personnalisation des boutons */
+        .btn-primary {
+            background-color: #007BFF;
+            border-color: #0056b3;
+        }
+        /* Liens dans le footer */
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #0056b3;
+        }
+        /* Style pour les étiquettes des formulaires */
+        .contact .form-label {
+            color: #007BFF;
+        }
+        /* Style des boutons de l'accordéon */
+        .accordion-button {
+            background-color: #f8f9fa;
+            color: #333;
+            font-weight: bold;
+        }
+        .accordion-button:hover {
+            background-color: #e2e6ea;
+        }
+        /* Arrière-plan clair général */
+        .bg-light {
+            background-color: #f8f9fa !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barre de navigation principale -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold text-primary" href="#">Go My Travel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <!-- Lien vers l'accueil -->
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#accueil">Accueil</a>
+              </li>
+              <!-- Lien vers les destinations -->
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#destination">Destinations</a>
+              </li>
+              <!-- Lien vers les circuits -->
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#circuit">Circuits</a>
+              </li>
+              <!-- Lien vers la section contact -->
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Section Accueil avec une image d'arrière-plan -->
+    <section id="accueil" class="hero bg-image d-flex align-items-center justify-content-center" style="background-image: url('https://media.istockphoto.com/id/1393093359/photo/search-for-air-travel-information-air-ticket-booking-for-travel.jpg?s=1024x1024&w=is&k=20&c=xpktFWqqQXiDQQcmUmtmZl8YQke1pi2OI9HkMSensRI='); height: 400px; background-size: cover; background-position: center;">
+        <div class="text-center">
+            <h1 class="display-4 fw-bold">Découvrez le Monde</h1>
+            <p class="lead">Explorez les destinations les plus pittoresques avec nous</p>
+            <a href="#destination" class="btn btn-primary btn-lg">Réservez Maintenant</a>
+        </div>
+    </section>
+
+    <!-- Section des Destinations -->
+    <section id="destination" class="destinations py-5">
+        <div class="container">
+          <h2 class="text-center text-primary mb-5">Destinations</h2>
+          <div class="row g-4">
+            <!-- Carte pour la destination Grèce -->
+            <div class="col-md-4">
+              <div class="card shadow-sm">
+                <img src="https://plus.unsplash.com/premium_photo-1661964149725-fbf14eabd38c?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Destination 1">
+                <div class="card-body">
+                  <h5 class="card-title">Grèce</h5>
+                  <p class="card-text">Profitant d’un climat méditerranéen, la Grèce est un pays où il fait bon vivre au quotidien. Pour profiter de la chaleur des îles cycladiques en plein été, mieux vaut privilégier le mois d’août, idéalement accompagné du meltémi, le vent des îles. Si vous souhaitez éviter les pics de chaleur et la foule pour profiter des sites culturels plus librement, les mois de mai/juin et septembre/octobre sont idéaux. Quelle que soit la période de votre visite, nos spécialistes sauront vous trouver un lieu pour répondre à vos attentes.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Carte pour la destination Dubai -->
+            <div class="col-md-4">
+              <div class="card shadow-sm">
+                <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSixHnoyGs_rbqM83mpnlv9ldH2R7agpL1k9Itlq1BhVqm5gzx-PX3VeeVsEC7cCF7A3WP7TqY_UmrHtxtyU03FVhrhPFNH_OnC3LAWgA" height="238" class="card-img-top" alt="Dubai">
+                <div class="card-body">
+                  <h5 class="card-title">Dubai</h5>
+                  <p class="card-text">Envisagez-vous d’explorer les principales attractions de Dubaï, du désert au dîner croisière ? Prenez vos valises. Partons en vacances. Profitez de votre voyage avec les meilleures offres sur Go My Travel. Découvrez les Émirats arabes unis pour des vacances des plus mémorables grâce à nos forfaits passionnants. Découvrez le meilleur des sites et attractions incontournables du pays grâce à nos offres exceptionnelles. Que vous soyez à la recherche d’une escapade à Dubaï ou d’explorer les joyaux moins connus, nous les avons tous couverts.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Carte pour la destination Toronto -->
+            <div class="col-md-4">
+              <div class="card shadow-sm">
+                <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/70/3d/20.jpg" class="card-img-top" alt="Toronto">
+                <div class="card-body">
+                  <h5 class="card-title">Toronto</h5>
+                  <p class="card-text">Découvrez la ville de Toronto et la région environnante lors de ce bref mais époustouflant vol en hélicoptère. Survolez la plus grande ville du Canada avec une visite touristique exclusive des toits du centre-ville de Toronto et au-delà, y compris l’emblématique Tour CN, le terrain de l’Exposition nationale canadienne et le magnifique front de mer du lac Ontario. Ce vol incroyable couvre près de neuf miles et comprend une photo numérique souvenir (livrée en ligne) ainsi qu’une photo souvenir imprimée.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Section des Circuits -->
+    <section id="circuit" class="tours py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center text-primary mb-5">Voyages Organisés</h2>
+          <div class="accordion" id="accordionTours">
+            <!-- Circuit en Corse -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Circuit en Corse sur 8 jours
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionTours">
+                <div class="accordion-body">
+                  <p>LES POINTS FORTS DU CIRCUIT
+                    – Une découverte complète de l’île en 8 jours. <br>
+                    -Les transferts aller/retour depuis l’aéroport de Cote d'Ivoire <br>
+                    -Le transport en autocar tourisme avec air conditionné <br>
+                    -Circuit en hôtels, résidences 3 étoiles <br>
+                    – Un guide conférencier du 1e jour au 7e jour assurant les visites guidées de Calvi, Sartène, Corte, Ajaccio et Bonifacio. <br>
+                    – Montée dans les citadelles de Corte et Bonifacio en petit train. <br>
+                    – De nombreux repas de spécialités corses. <br>
+                    – Une dégustation de produits locaux durant le circuit. <br>
+                    – Une sortie en mer à Bonifacio. <br>
+                    – Une soirée musicale en cours de circuit (chanteur local corse). <br>
+                    – Les audioguides pendant le circuit <br>
+                    -Assistance téléphonique à votre disposition 24h/24, 7j/7 pour vous assister en cas de besoin</p>
+                    <a href="#" class="btn btn-link">Voir les détails</a>
+                </div>
+              </div>
+            </div>
+            <!-- Circuit Andalousie -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Circuit Andalousie en 8 jours
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionTours">
+                <div class="accordion-body">
+                  <p>Ce circuit vous transporte de la Costa del Sol à la Sierra Nevada dans une ambiance chaleureuse et envoûtante. Découvrez les hauts lieux qui ont contribué à la popularité de l’Andalousie avec notamment Málaga, Grenade et Cordoue. C’est sans oublier Séville et sa plus grande cathédrale d’Espagne. Une belle occasion de découvrir ou redécouvrir le berceau du flamenco. <br>
+                    Les points fort du circuit:  <br>
+                       
+                       -Excellent guide accompagnateur francophone <br>
+                       -30 participants maximum <br>
+                       -Entrées aux principaux monument inclus (Alhambra à Grenade, Mosquée-Cathédrale à Cordoue, Alcazar et Cathédrale à Séville). <br>
+                       – Excellente hôtellerie. <br>
+                       – Un déjeuner typique sur la plage à Malaga le J6. <br>
+                       – ¼ de vin et ¼ d’eau minérale inclus aux repas.</p> <br>
+                     <a href="#" class="btn btn-link">Voir les détails</a></p>
+                </div>
+              </div>
+            </div>
+            <!-- Circuit Rajasthan -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Voyage de 14 jours au Rajasthan
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionTours">
+                <div class="accordion-body">
+                  <p>Les points forts : 
+                    <br>
+                    -Découverte des villes aux couleurs pastel : Jodhpur la ville bleu, Jaipur la ville rose, Jaisalmer la ville jaune. <br>
+                    -Découverte des sites incontournables du Nord de l’Inde : chefs d’œuvre moghols, temples, palais, forts et havelis. <br>
+                    -Promenade en Jeep dans le désert de Jaisalmer au coucher du soleil. <br>
+                    -Massage des pieds de chaque participant à Jaipur dans un centre ayurvédique. <br>
+                    -Visite au village des éléphants à Jaipur <br>
+                    -Promenade en cyclo-pousse dans les bazars pittoresques et les vieilles villes. <br>
+                    -Revivre l’histoire d’un empire fastueux lors de la visite de sites incontournables parmi lesquels sites UNESCO. <br>
+                    -La visite du Taj Mahal … des moments inoubliables en perspective. <br>
+                    -La découverte de Shekhawati/ le musée à ciel ouvert du Rajasthan. <br>
+                    -Rencontre la population locale pendant le voyage au Rajasthan. <br>
+                    -Cours de cuisine indienne</p>
+                  <a href="#" class="btn btn-link">Voir les détails</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact py-5">
+        <div class="container">
+          <h2 class="text-center text-primary mb-5">Contactez-nous</h2>
+          <form>
+            <!-- Champ pour le nom -->
+            <div class="mb-3">
+              <label for="name" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="name" placeholder="Entrez votre nom" required>
+            </div>
+            <!-- Champ pour l'adresse électronique -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Adresse électronique</label>
+              <input type="email" class="form-control" id="email" placeholder="Entrez votre e-mail" required>
+            </div>
+            <!-- Champ pour la destination d'intérêt -->
+            <div class="mb-3">
+              <label for="destination" class="form-label">Destination d'intérêt</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Parlez-nous de votre destination rêvée" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+          </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2024 Go My Travel. Tous droits réservés.</p>
+        <div>
+          <!-- Icônes des réseaux sociaux -->
+          <a href="#"><i class="fa fa-facebook fa-lg"></i></a>&nbsp;
+          <a href="#"><i class="fa fa-twitter fa-lg"></i></a>&nbsp;
+          <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>&nbsp;
+          <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>&nbsp;
+          <a href="#"><i class="fa fa-skype fa-lg"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
